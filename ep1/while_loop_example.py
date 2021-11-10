@@ -1,20 +1,20 @@
 # normal while loop example
-print("Normal While Loop example")
-i = 0
-while i < 10:
-  print(i)
-  i += 1
+# print("Normal While Loop example")
+# i = 0
+# while i < 10:
+#   print(i)
+#   i += 1
 
 #break statement example for while loop
-print("break statement example for while loop")
-i = 1
-while i < 10:
-  print(i)
-  if i == 5:
-    break
-  i += 1
+# print("break statement example for while loop")
+# i = 1
+# while i < 10:
+#   print(i)
+#   if i == 5:
+#     break
+#   i += 1
 
-#continue statement example for while loop
+# #continue statement example for while loop
 print("continue statement example for while loop")
 i = 0
 while i < 10:
@@ -24,7 +24,7 @@ while i < 10:
   print(i)
 
 
-#else statement example for while loop
+# #else statement example for while loop
 print("else statement example for while loop")
 
 i = 0

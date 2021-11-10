@@ -2,26 +2,26 @@
 numerInt = 123
 numberFloat = 1.23
 
-num_new = numerInt + numberFloat
+numNew = numerInt + numberFloat
 
 print("datatype of numerInt:",type(numerInt))
 print("datatype of numberFloat:",type(numberFloat))
 
-print("Value of num_new:",num_new)
-print("datatype of num_new:",type(num_new))
+print("Value of numNew:",numNew)
+print("datatype of numNew:",type(numNew))
 
 #explicit type conversion
 
 numerInt = 123
-num_str = "456"
+numStr = "456"
 
 print("Data type of numerInt:",type(numerInt))
-print("Data type of num_str before Type Casting:",type(num_str))
+print("Data type of numStr before Type Casting:",type(numStr))
 
-num_str = int(num_str)
-print("Data type of num_str after Type Casting:",type(num_str))
+numStr = int(numStr)
+print("Data type of numStr after Type Casting:",type(numStr))
 
-num_sum = numerInt + num_str
+numSum = numerInt + numStr
 
-print("Sum of numerInt and num_str:",num_sum)
-print("Data type of the sum:",type(num_sum))
+print("Sum of numerInt and numStr:",numSum)
+print("Data type of the sum:",type(numSum))

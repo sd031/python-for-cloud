@@ -8,7 +8,7 @@ print("simpleList[1] = ", simpleList[1])
 print(type(simpleList[1]))
 
 #simpleList[4] = 5 type is int 
-print("simpleList[1] = ", simpleList[4])
+print("simpleList[4] = ", simpleList[4])
 
 print(type(simpleList[4]))
 

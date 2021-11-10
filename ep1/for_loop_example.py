@@ -1,5 +1,5 @@
 #normal loop example in python
-print("normal example")
+# print("normal example")
 colors = ["red", "green", "blue"]
 for x in colors:
   print(x)
@@ -18,7 +18,7 @@ for x in colors:
         break
     print(x)
 
-# loop continue statement example in python
+#loop continue statement example in python
 print("continue statemet example")
 colors = ["red", "green", "blue"]
 for x in colors:
@@ -27,7 +27,6 @@ for x in colors:
     print(x)
 
 # else block loop example in python
-
 print("else block example")
 colors = ["red", "green", "blue"]
 for x in colors:
@@ -35,7 +34,7 @@ for x in colors:
 else:
     print("All Items processed")
 
-# Range function loop example in python
+# # Range function loop example in python
 print("Range function example")
-for x in range(20):
+for x in range(100):
   print(x)
