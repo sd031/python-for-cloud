@@ -1,0 +1,3 @@
+Hello there from the other side
+This is just a simple text file for test. 
+Each sentence is separated by a new line.
