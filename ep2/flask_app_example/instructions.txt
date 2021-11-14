@@ -1,0 +1,14 @@
+Check full instructions here:
+https://flask.palletsprojects.com/en/2.0.x/installation/
+python3 -m venv venv
+. venv/bin/activate
+
+save dependecies in requirements.txt
+pip freeze > requirements.txt
+
+to install dependencies:
+pip install -r requirements.txt
+
+Run:
+python index.py
+

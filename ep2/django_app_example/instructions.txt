@@ -1,0 +1,31 @@
+Check full instructions here:
+https://docs.djangoproject.com/en/3.2/topics/install/
+python3 -m venv venv
+. venv/bin/activate
+
+python -m pip install Django
+
+save dependecies in requirements.txt
+pip freeze > requirements.txt
+
+to install dependencies next time:
+pip install -r requirements.txt
+
+Follow instructions to create a new Django project:
+https://docs.djangoproject.com/en/3.2/intro/tutorial01/
+check installation:
+python -m django --version
+
+Creating a project
+django-admin startproject mysimpleproject
+
+
+
+to Run: run from mysimpleproject folder 
+python manage.py runserver
+
+to run on any particular port:
+python manage.py runserver 8080
+
+Create New App:
+python manage.py startapp helloWorld
