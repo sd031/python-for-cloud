@@ -1,22 +1,24 @@
 #defining a class
-class MySimpleClass:
- x = 20
- def printValueOfX(self):
-      print('Value of x is ', self.x)
+# class MySimpleClass:
+#  x = 20
+#  def printValueOfX(self):
+#       print('Value of x is ', self.x)
 
 # creating an object from a class
-c = MySimpleClass()
-c.printValueOfX()
+# c = MySimpleClass()
+# c.printValueOfX()
 
-# class Person:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-#     def greetPerson(self):
-#         print("Hello " + self.name)
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def greetPerson(self):
+        print("Hello " + self.name)
+        print("Your age is " , self.age)
+        
 
-# p = Person("John", 36)
-# p.greetPerson()
+p = Person("John", 36)
+p.greetPerson()
 
 
 

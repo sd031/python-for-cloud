@@ -1,8 +1,8 @@
 #get current working directory
 import os
 currentWorkingDirectory = os.getcwd()
-print("Current Working Directory: ",currentWorkingDirectory)
-print(__name__)
+# print("Current Working Directory: ",currentWorkingDirectory)
+
 
 #change directory to any path such as /var/logs 
 # import os
@@ -35,5 +35,5 @@ print(__name__)
 
 #removing a directory which alrady has few files and sub directories
 # import shutil
-# shutil.rmtree('directory_with_sub_directoris_andfiles')
+# shutil.rmtree('my_renamed_sample_directory')
 

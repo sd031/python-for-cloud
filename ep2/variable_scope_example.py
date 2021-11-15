@@ -31,7 +31,7 @@
 #   print("x inside function:", x)
 # someSimpleFunction()
 #error will be raised as x is not defined in global scope
-# print("x outside function:", x)
+#print("x outside function:", x)
 
 #nonlocal variable example
 def outerFunction():

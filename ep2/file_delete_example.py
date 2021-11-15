@@ -4,8 +4,8 @@
 
 #delete file if exist
 
-# import os
-# if os.path.exists("sample_file_2.txt"):
-#   os.remove("sample_file_2.txt")
-# else:
-#   print("The file does not exist")
+import os
+if os.path.exists("sample_file_2.txt"):
+  os.remove("sample_file_2.txt")
+else:
+  print("The file does not exist")
