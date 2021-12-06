@@ -3,7 +3,6 @@ import logging
 import json
 import boto3
 from botocore.exceptions import ClientError
-from boto3.s3.transfer import TransferConfig
 import iam_example
 
 code_build_role_name = 'containerAppBuildProjectRolePython'

@@ -6,7 +6,7 @@ from botocore.exceptions import ClientError
 from boto3.s3.transfer import TransferConfig
 import requests
 
-bucket_name = "sandip-boto3-demo-bucket"
+bucket_name = "sandip-boto3-live-demo-bucket"
 region_name = "us-west-2"
 
 def create_bucket(bucket_name, region=None):
@@ -42,7 +42,7 @@ def list_buckets( region=None):
         return False
     return True
 
-# list_buckets(region_name)
+#list_buckets(region_name)
 
 def upload_file(file_name, bucket, object_name=None):
     # If S3 object_name was not specified, use file_name
@@ -75,18 +75,19 @@ def upload_file_object(file_name, bucket, object_name=None):
     return True
 upload_file_object("./sample_file_2.txt", bucket_name, "sample_file_2.txt")
 
+#create_bucket("eampty-bucket-example-sandip", region_name)
 def delete_empty_bucket(bucket):
     s3_client = boto3.client('s3')
-    response = s3_client.delete_bucket(Bucket=bucket_name)
+    response = s3_client.delete_bucket(Bucket=bucket)
     print(response)
-
+#delete_empty_bucket(bucket_name)
 
 def delete_non_empty_bucket(bucket):
     s3_client = s3 = boto3.resource('s3') 
     bucketClient = s3_client.Bucket(bucket)
     bucketClient.objects.all().delete()
     bucketClient.meta.client.delete_bucket(Bucket=bucket)
-#delete_bucket(bucket_name)
+#delete_non_empty_bucket(bucket_name)
 def delete_object(bucket,object_name):
     s3_client = boto3.client('s3')
     response = s3_client.delete_object(Bucket=bucket,Key=object_name)
@@ -133,7 +134,7 @@ def upload_file_multipart(file_name, bucket, object_name=None):
         logging.error(e)
         return False
     return True
-upload_file_multipart("./sample_file_1.txt", bucket_name, "sample_file_1.txt")
+# upload_file_multipart("./sample_file_1.txt", bucket_name, "sample_file_1.txt")
 
 def download_file_concurrently(file_name, bucket, object_name):
     #default concurrency is 10
@@ -145,7 +146,7 @@ def download_file_concurrently(file_name, bucket, object_name):
         logging.error(e)
         return False
     return True
-download_file_concurrently("./downloaded_files/sample_file_1.txt", bucket_name, "sample_file_1.txt")
+# download_file_concurrently("./downloaded_files/sample_file_1.txt", bucket_name, "sample_file_1.txt")
 
 def create_presigned_url(bucket, object_name, expiration=3600):
     s3_client = boto3.client('s3')
@@ -160,8 +161,8 @@ def create_presigned_url(bucket, object_name, expiration=3600):
         return None
     return response
 
-responseObject = create_presigned_url(bucket_name,"sample_file_1.txt")
-#print(responseObject)
+# responseObject = create_presigned_url(bucket_name,"sample_file_1.txt")
+# print(responseObject)
 
 def create_presigned_upload_url(bucket_name, object_name,
                           fields=None, conditions=None, expiration=3600):
@@ -177,14 +178,14 @@ def create_presigned_upload_url(bucket_name, object_name,
         return None
     return response
 
-uplodable_file_name = "./sample_file_3.txt"
-uploadOject = create_presigned_upload_url(bucket_name,"sample_file_3.txt")
-print(uploadOject)
-with open(uplodable_file_name, 'rb') as f:
-    files = {'file': (uplodable_file_name, f)}
-    http_response = requests.post(uploadOject['url'], data=uploadOject['fields'], files=files)
-# If successful, returns HTTP status code 204
-print(f'File upload HTTP status code: {http_response.status_code}')
+# uplodable_file_name = "./sample_file_3.txt"
+# uploadOject = create_presigned_upload_url(bucket_name,"sample_file_3.txt")
+# print(uploadOject)
+# with open(uplodable_file_name, 'rb') as f:
+#     files = {'file': (uplodable_file_name, f)}
+#     http_response = requests.post(uploadOject['url'], data=uploadOject['fields'], files=files)
+# #If successful, returns HTTP status code 204
+# print(f'File upload HTTP status code: {http_response.status_code}')
 
 def change_object_permission(bucket, object_name, permission):
     s3_client = boto3.client('s3')
@@ -197,4 +198,4 @@ def change_object_permission(bucket, object_name, permission):
         return None
     return response
 
-change_object_permission(bucket_name, "sample_file_3.txt", "public-read")
+change_object_permission(bucket_name, "sample_file_3.txt", "private")
