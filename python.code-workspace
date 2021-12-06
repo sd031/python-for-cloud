@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../ansible"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../codeDeployDemo"
+		},
+		{
+			"path": "../microservice-cicd-project-with-terraform"
+		}
+	],
+	"settings": {}
+}

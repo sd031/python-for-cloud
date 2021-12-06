@@ -1,0 +1,8 @@
+{
+    "key_path": "./aws_ec2_key.pem",
+    "key_name": "ec2-key-pair",
+    "ami_id": "ami-00f7e5c52c0f43726",
+    "instance_type": "t2.micro",
+    "region_name": "us-west-2", 
+    "ec2_data_path":"./configs/ec2_data.json"
+}
