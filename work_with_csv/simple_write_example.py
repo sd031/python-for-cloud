@@ -5,7 +5,7 @@ header = next(csvreader)
 data = []
 for row in csvreader:
     if(row[0] == 'Student 3'):
-        row[2] = "Bengalore"
+        row[2] = "Bangalore"
     data.append(row)
 
 filename = 'simple_data_output.csv'

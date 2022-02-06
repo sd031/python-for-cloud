@@ -1,6 +1,6 @@
 import csv
 #open the file in read mode
-file = open("sample_data.csv")
+file = open("./sample_data.csv")
 # The type is _io.TextIOWrapper
 # print(type(file)) 
 #read parse the csv file
@@ -12,7 +12,8 @@ print(header)
 rows = []
 #iterating over csvreader rows
 for row in csvreader:
+    print(row[2])
     rows.append(row)
 #pirnt final rows
-print(rows)
+# print(rows)
 file.close()

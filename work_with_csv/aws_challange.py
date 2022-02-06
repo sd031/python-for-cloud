@@ -22,4 +22,4 @@ for index, row in data.iterrows():
     finalData.append(row)
 
 rDataFrame = pd.DataFrame(finalData, columns=header)
-rDataFrame.to_csv('aws_s3_result.csv', index=False)
+rDataFrame.to_csv('aws_s3_result.csv', index=True)

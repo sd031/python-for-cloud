@@ -1,4 +1,4 @@
-Name,Path,Status
-Sample 1,sample_file_1.txt,Deleted (204)
-Sample 2,sample_file_2.txt,Deleted (204)
-Sample 3,sample_file_3.txt,Deleted (204)
+,Name,Path,Status
+0,Sample 1,sample_file_1.txt,Deleted (204)
+1,Sample 2,sample_file_2.txt,Deleted (204)
+2,Sample 3,sample_file_3.txt,Deleted (204)

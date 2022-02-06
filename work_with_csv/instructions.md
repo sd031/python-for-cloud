@@ -1,7 +1,7 @@
 python3 -m venv venv
 . venv/bin/activate
 
-python -m pip install Django
+python -m pip install 
 
 save dependecies in requirements.txt
 pip freeze > requirements.txt

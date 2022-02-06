@@ -1,5 +1,4 @@
 import pandas as pd
-import json
 
 #more documentation https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
 data = pd.read_csv("./sample_data.csv",  delimiter=',')
