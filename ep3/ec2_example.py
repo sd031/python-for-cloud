@@ -66,26 +66,26 @@ def create_instance():
 # get_public_ip("i-0081b9949a5aa8b1d")
 
 #get list of all running instances
-# def get_running_instances():
-#     reservations = ec2_client.describe_instances(Filters=[
-#         {
-#             "Name": "instance-state-name",
-#             "Values": ["running"],
-#         }
-#     ]).get("Reservations")
+def get_running_instances():
+    reservations = ec2_client.describe_instances(Filters=[
+        {
+            "Name": "instance-state-name",
+            "Values": ["running"],
+        }
+    ]).get("Reservations")
 
-#     for reservation in reservations:
-#         for instance in reservation["Instances"]:
-#             instance_id = instance["InstanceId"]
-#             instance_type = instance["InstanceType"]
-#             public_ip = instance["PublicIpAddress"]
-#             private_ip = instance["PrivateIpAddress"]
-#             print(f"{instance_id}, {instance_type}, {public_ip}, {private_ip}")
-#             # if "ec2_instance_ids" in ec2_data:
-#             #     if instance_id not in ec2_data["ec2_instance_ids"]: 
-#             #      ec2_data["ec2_instance_ids"].append(instance_id)
-#             # else:
-#             #     ec2_data["ec2_instance_ids"] = [instance_id]
+    for reservation in reservations:
+        for instance in reservation["Instances"]:
+            instance_id = instance["InstanceId"]
+            instance_type = instance["InstanceType"]
+            public_ip = instance["PublicIpAddress"]
+            private_ip = instance["PrivateIpAddress"]
+            print(f"{instance_id}, {instance_type}, {public_ip}, {private_ip}")
+            # if "ec2_instance_ids" in ec2_data:
+            #     if instance_id not in ec2_data["ec2_instance_ids"]: 
+            #      ec2_data["ec2_instance_ids"].append(instance_id)
+            # else:
+            #     ec2_data["ec2_instance_ids"] = [instance_id]
             
 # get_running_instances()
 

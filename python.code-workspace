@@ -11,6 +11,18 @@
 		},
 		{
 			"path": "../microservice-cicd-project-with-terraform"
+		},
+		{
+			"path": "../quickstart"
+		},
+		{
+			"path": "../pulumi_js"
+		},
+		{
+			"path": "../yaml_crash_course"
+		},
+		{
+			"path": "../shell-scripting-demo"
 		}
 	],
 	"settings": {}
